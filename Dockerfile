@@ -8,4 +8,4 @@ RUN apk add --update openssl less groff ca-certificates python py-pip \
 RUN adduser -D cli
 USER cli
 
-ENTRYPOINT /usr/bin/aws
+ENTRYPOINT ["/usr/bin/aws"]
